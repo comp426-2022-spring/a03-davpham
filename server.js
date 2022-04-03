@@ -9,7 +9,7 @@ const port = args.port || 5000
 
 // Start an app server
 const server = app.listen(port, () => {
-    console.log('App listening on port %PORT%'.replace('%PORT%',HTTP_PORT))
+    console.log('App listening on port %PORT%'.replace('%PORT%',port))
 });
 
 app.get('/app/', (req, res) => {
